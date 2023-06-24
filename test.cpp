@@ -33,6 +33,14 @@ int main(int argc, char** argv) {
     int thickness = 57;
     ellipse(img, center, axes, angle, startAngle, endAngle, color, thickness);
     
+    string text = "Welcome to T-DT!";
+    int length = text.length();
+    string border(length + 4, '*');
+
+    cout << border << endl;
+    cout << "* " << text << " *" << endl;
+    cout << border << endl;
+    
     imshow("T-DT", img);
     waitKey(0);
 
